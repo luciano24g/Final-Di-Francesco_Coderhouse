@@ -1,0 +1,120 @@
+$slime: #036e39;
+$greenfoot : #0c5731;
+
+
+#main_skills {
+    height: 193vh;
+    width: 100vw;
+    background:  rgb(38, 38, 38);
+	display: flex;
+    flex-direction: column;
+	z-index: -5;
+	align-items: center;
+    grid-area: main;
+    justify-content: space-between;
+    
+}
+
+
+.sect_main{
+    display: flex;
+    height: 65vh;
+    align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin:0rem 5rem;
+                color: #fff;
+            }
+}
+
+.sect_skills {
+    width: 100vw;
+    height: 187vh;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    background-color:$slime;
+    animation: wave 3s ease-in-out infinite;
+    
+    
+	
+            .card_sect_skills {
+                display: grid;
+                grid-gap: 5rem;
+                grid-template-columns: repeat(auto-fit, 300px);
+                justify-content: center;
+                align-items: center;
+               
+            }
+            .card_skills {
+                color: black;
+                background-color: #fff;
+                border-radius: 4px;
+                height: 28rem;
+                width: 17rem;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: -8px -9px 37px 1px rgba(0,0,0,0.84);
+                transition: .3s;
+                        .bx_card {
+                            font-size: 55px;
+                        }
+            }
+}
+
+@media screen and (max-width:1312px ){
+    
+}
+
+
+@media screen and (max-width:930px ){
+
+
+}
+
+
+@media screen and (max-width:743px){
+    #main_skills{
+        height: 391vh;
+    }
+
+    .sect_main{
+        height: 50vh
+	}
+    .sect_skills{
+       justify-content: flex-end;
+       height: 320vh;
+    }
+}
+
+
+@media screen and (max-width:470px ){
+    #main_skills{
+        height: 412vh;
+    }
+    .sect_main{
+        height: 70vh;
+    }
+
+	.sect_skills{
+		height: 350vh;
+
+                .card_sect_skills {
+                    justify-items: center;
+                            p{
+                                font-size: 12px;
+                            }
+                }
+                .card_skills {
+                    height: 24rem;
+                    width: 13rem;
+                        
+                }
+	}
+
+}
+

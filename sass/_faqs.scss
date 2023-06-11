@@ -1,0 +1,42 @@
+$slime: #036e39;
+$greenfoot : #0c5731;
+    
+
+
+
+#main_faqs {
+    height: 180vh;
+    width: 100vw;
+	background: rgb(38, 38, 38);
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	align-items: center;
+    grid-area: main;
+}
+
+.sect_faqs{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height:90vh ;
+    justify-content: center;
+}
+
+
+ .sect_faqs_low{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: $slime;
+ }
+
+
+
+
+
+
+

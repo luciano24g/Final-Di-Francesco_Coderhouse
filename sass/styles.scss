@@ -1,0 +1,21 @@
+@use 'index';
+@use 'assets';
+@use 'skills';
+@use 'works';
+@use 'faqs';
+@use 'contact';
+
+body {
+    display: grid;
+	grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: auto auto auto;
+    overflow-x: hidden;
+}
+
+
+

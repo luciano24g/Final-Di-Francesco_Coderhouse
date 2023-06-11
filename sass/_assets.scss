@@ -1,0 +1,48 @@
+$slime: #109954;
+$greenfoot : #0c5731;
+
+
+
+#header{
+	grid-area: header;
+                
+}
+.listCent {
+    display: flex;
+    justify-content: end;
+}
+.bg_navbar{
+    background: rgb(32, 32, 32);
+    
+}
+.bg_navbar a{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+#footer {
+    background-color:$greenfoot;
+    height: 7rem;
+	grid-area: footer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+                .footer_list {
+                    display: flex;
+                    flex-direction: row;
+                }
+                .footer_list li {
+                    list-style: none;
+                    align-items: center;
+                    padding-right: 1rem;
+                }
+                .footer_list a{
+                    color: #ffffff;
+                }
+}
