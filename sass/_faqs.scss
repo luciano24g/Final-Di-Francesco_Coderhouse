@@ -33,7 +33,11 @@ $greenfoot : #0c5731;
     height: 90vh;
     background-color: $slime;
  }
-
+ @media screen and (max-width:720px){
+    .sect_faqs_low{
+        flex-direction: column;
+    }
+ }
 
 
 

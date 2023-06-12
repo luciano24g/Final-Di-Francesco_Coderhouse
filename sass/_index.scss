@@ -8,7 +8,6 @@ $greenfoot : #0c5731;
 	background: rgb(38, 38, 38);
 	display: flex;
     flex-direction: column;
-	z-index: -5;
 	align-items: center;
     grid-area: main;
 }
@@ -69,37 +68,48 @@ $greenfoot : #0c5731;
                             }
                             .sect_wave_button{
                                 padding-top: 12rem;
+                                display: flex;
+                                    .buttonClass{
+                                        font-weight: 0;
+                                        font-size: 14px;
+                                        color: #000000;
+                                        background-color: #8cfaa9;
+                                        padding: 10px 30px;
+                                        border: solid #000000 2px;
+                                        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+                                        border-radius: 50px;
+                                        transition : 1000ms;
+                                        transform: translateY(0);
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+                                        cursor: pointer;
+                                                    &:hover {
+                                                        transition : 1000ms;
+                                                        padding: 10px 50px;
+                                                        transform : translateY(-0px);
+                                                        background-color: #000000;
+                                                        color: #ffffff;
+                                                        border: solid 2px #0066cc;
+                                                    }
 
-                                    button{
-                                        box-shadow:inset 0px 34px 0px -15px #b54b3a;
-                                        background-color:#a73f2d;
-                                        border:1px solid #241d13;
-                                        display:inline-block;
-                                        cursor:pointer;
-                                        color:#ffffff;
-                                        font-family:Arial;
-                                        font-size:15px;
-                                        font-weight:bold;
-                                        padding:9px 23px;
-                                        text-decoration:none;
-                                        text-shadow:0px -1px 0px #7a2a1d;
-
-                                        &hover {
-                                                background-color:#b34332;
-                                            }
-                                            .myButton:active {
-                                                position:relative;
-                                                top:1px;
-                                            }
-                                            
-                                                    
+                                                    a {
+                                                        text-decoration: none;
+                                                    }
+                                        
                                         }
+                                    
                                     }
                             }
+                            
 
 
                 }
+
+             
                 
+                    
+
 
 
 @keyframes wave {

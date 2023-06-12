@@ -4,7 +4,6 @@
   background: rgb(38, 38, 38);
   display: flex;
   flex-direction: column;
-  z-index: -5;
   align-items: center;
   grid-area: main;
 }
@@ -62,27 +61,34 @@
 }
 .wave .sect_wave .sect_wave_button {
   padding-top: 12rem;
+  display: flex;
 }
-.wave .sect_wave .sect_wave_button button {
-  box-shadow: inset 0px 34px 0px -15px #b54b3a;
-  background-color: #a73f2d;
-  border: 1px solid #241d13;
-  display: inline-block;
+.wave .sect_wave .sect_wave_button .buttonClass {
+  font-weight: 0;
+  font-size: 14px;
+  color: #000000;
+  background-color: #8cfaa9;
+  padding: 10px 30px;
+  border: solid #000000 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   cursor: pointer;
+}
+.wave .sect_wave .sect_wave_button .buttonClass:hover {
+  transition: 1000ms;
+  padding: 10px 50px;
+  transform: translateY(0px);
+  background-color: #000000;
   color: #ffffff;
-  font-family: Arial;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 9px 23px;
+  border: solid 2px #0066cc;
+}
+.wave .sect_wave .sect_wave_button .buttonClass a {
   text-decoration: none;
-  text-shadow: 0px -1px 0px #7a2a1d;
-}
-.wave .sect_wave .sect_wave_button buttonhover {
-  background-color: #b34332;
-}
-.wave .sect_wave .sect_wave_button button .myButton:active {
-  position: relative;
-  top: 1px;
 }
 
 @keyframes wave {
@@ -316,7 +322,6 @@
   background: rgb(38, 38, 38);
   display: flex;
   flex-direction: column;
-  z-index: -5;
   align-items: center;
   grid-area: main;
   justify-content: space-between;
@@ -386,13 +391,17 @@
   background-color: #036e39;
 }
 
+@media screen and (max-width: 720px) {
+  .sect_faqs_low {
+    flex-direction: column;
+  }
+}
 #main_contact {
   height: 120vh;
   width: 100vw;
   background: rgb(38, 38, 38);
   display: flex;
   flex-direction: column;
-  z-index: -5;
   align-items: center;
   justify-content: center;
   grid-area: main;
@@ -462,7 +471,7 @@
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   margin-bottom: 22px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .sect_contact .container .right .field:hover {
   background-color: rgba(0, 0, 0, 0.1);
