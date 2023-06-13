@@ -39,8 +39,6 @@ $greenfoot : #0c5731;
     background-color:$slime;
     animation: wave 3s ease-in-out infinite;
     
-    
-	
             .card_sect_skills {
                 display: grid;
                 grid-gap: 5rem;
@@ -66,8 +64,10 @@ $greenfoot : #0c5731;
             }
 }
 
-@media screen and (max-width:1312px ){
-    
+@media screen and (max-width:1502px ){
+    .sect_skills{
+        justify-content: flex-end;
+    }
 }
 
 

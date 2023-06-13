@@ -295,6 +295,11 @@
   font-size: 55px;
 }
 
+@media screen and (max-width: 1502px) {
+  .sect_skills {
+    justify-content: flex-end;
+  }
+}
 @media screen and (max-width: 743px) {
   #main_skills {
     height: 391vh;
