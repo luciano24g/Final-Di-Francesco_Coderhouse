@@ -378,8 +378,8 @@
   flex-direction: column-reverse;
 }
 .sect_works .sect_works_art .cards_works .card_wave {
-  width: 600px;
-  height: 240px;
+  width: 100%;
+  height: 85%;
   background-color: rgb(27, 126, 65);
   animation: card_wave 3s ease-in-out infinite;
 }
@@ -401,21 +401,18 @@
   #main_works {
     height: 180vh;
   }
-  .cards_works {
+  .sect_works .sect_works_art .cards_works {
     width: 400px;
-    height: 100px;
-  }
-  .cards_works .card_wave {
-    width: 400px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 470px) {
-  .cards_works {
-    width: 400px;
-    height: 100px;
+  #main_works {
+    height: 230vh;
   }
-  .cards_works .card_wave {
-    width: 400px;
+  .sect_works .sect_works_art .cards_works {
+    width: 250px;
+    height: 350px;
   }
 }
 #main_faqs {
