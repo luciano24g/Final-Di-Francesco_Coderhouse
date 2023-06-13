@@ -36,6 +36,7 @@
   justify-content: center;
   background-color: #036e39;
   animation: wave 3s ease-in-out infinite;
+  text-align: center;
 }
 .wave .sect_wave {
   display: flex;
@@ -262,6 +263,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 0rem 5rem;
   color: #fff;
 }
