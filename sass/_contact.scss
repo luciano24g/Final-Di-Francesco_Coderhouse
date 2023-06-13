@@ -1,3 +1,6 @@
+
+$slime: #036e39;
+
 #main_contact {
     height: 120vh;
     width: 100vw;
@@ -38,7 +41,7 @@
                         .contact-box {
                             max-width: 850px;
                             display: grid;
-                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-columns: repeat(1, 1fr);
                             justify-content: center;
                             align-items: center;
                             text-align: center;
@@ -48,7 +51,8 @@
                             -moz-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);;
                         }
                        
-                        
+                        }
+
                         .right {
                             padding: 25px 40px;
                                     h2 {
@@ -108,4 +112,11 @@
                         }
                 }
 
+
+@media screen and (max-width:930px ){
+    .contact-box{
+		grid-template-columns: (1, 1fr);
+        
+	}
+	
 }

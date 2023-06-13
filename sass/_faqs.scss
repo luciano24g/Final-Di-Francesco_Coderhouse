@@ -1,6 +1,6 @@
 $slime: #036e39;
 $greenfoot : #0c5731;
-    
+$accordion-button-active-color:  black;  
 
 
 
@@ -22,23 +22,26 @@ $greenfoot : #0c5731;
     height:90vh ;
     justify-content: center;
 }
-
+.card_faqs{
+    .accordion{
+        --bs-accordion-active-bg: #7bd888;
+    }
+}
 
  .sect_faqs_low{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100vw;
     height: 90vh;
     background-color: $slime;
+            .btn-primary {
+                --bs-btn-color: #fff;
+                --bs-btn-bg: #31425a;
  }
- @media screen and (max-width:720px){
-    .sect_faqs_low{
-        flex-direction: column;
-    }
- }
-
+}
+ 
 
 
 

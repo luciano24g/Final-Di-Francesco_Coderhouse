@@ -1,5 +1,5 @@
 #main_works {
-    height: 230vh;
+    height: 140vh;
     width: 100vw;
     background:  rgb(38, 38, 38);
 	display: flex;
@@ -13,7 +13,6 @@
 .sect_works {
 	display: flex;
 	flex-direction: column;
-	
 	width: 100vw;
 	height: 100vh;
                 .sect_works_art {
@@ -22,6 +21,7 @@
                     grid-template-columns: repeat(auto-fit, 700px);
                     margin-top: 10rem;
                     justify-content: center;
+                    justify-items: center ;
                     
                             .cards_works{
                                 background-color: #505050;
@@ -29,10 +29,11 @@
                                 height: 300px;
                                 display: flex;
                                 flex-direction: column-reverse;
+                                
                                         .card_wave{
                                             width: 600px;
                                             height: 240px;
-                                            background-color: rgb(65, 81, 208);
+                                            background-color: rgb(27, 126, 65);
                                             animation: card_wave 3s ease-in-out infinite;
                                         }
                             }
@@ -51,25 +52,36 @@
   }
 
 
-
-  @media screen and (max-width:1312px ){
+  @media screen and (max-width:1606px){
+    #main_works{
+        height: 180vh;
+    }
+  }
+  
+  @media screen and (max-width:700px){
+    #main_works{
+        height: 180vh;
+    }
     
-  }
-  
-  
-  @media screen and (max-width:930px ){
-  
-  
-  }
-  
-  
-  @media screen and (max-width:743px){
-      
+    
+    .cards_works{
+        width:400px;
+        height:100px; 
+            .card_wave{
+                width: 400px;
+            }
+    }
   }
   
   
   @media screen and (max-width:470px ){
-      
+    .cards_works{
+        width:400px;
+        height:100px; 
+            .card_wave{
+                width: 400px;
+            }
+    }
   }
 
  
