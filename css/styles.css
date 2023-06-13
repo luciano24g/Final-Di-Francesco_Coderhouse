@@ -216,6 +216,10 @@
   --bs-navbar-active-color:green;
 }
 
+.navbar-toggler {
+  background-color: white;
+}
+
 #footer {
   background-color: #0c5731;
   height: 7rem;
@@ -445,6 +449,7 @@
   width: 100vw;
   height: 90vh;
   background-color: #036e39;
+  padding: 0px 10px;
 }
 .sect_faqs_low .btn-primary {
   --bs-btn-color: #fff;
@@ -452,6 +457,17 @@
   --bs-btn-active-bg: #4ea45a;
 }
 
+@media screen and (max-width: 470px) {
+  #main_faqs {
+    height: 220vh;
+  }
+  .sect_faqs {
+    height: 110vh;
+  }
+  .sect_faqs_low {
+    height: 110vh;
+  }
+}
 #main_contact {
   height: 120vh;
   width: 100vw;
