@@ -57,6 +57,7 @@ $main:rgb(218, 218, 218);
                                             display: flex;
                                             width: 90%;
                                             height: 100%;
+                                            font-size: 16px;
                                             justify-content: space-around;
                                             align-items: center;
                                         }
@@ -67,7 +68,7 @@ $main:rgb(218, 218, 218);
                                         .works_link{
                                             text-decoration:none ;
                                             color: #ffff;
-                                            font-size: 16px;
+                                            
                                             transition: transform .9s;
 
                                                 & :hover {
@@ -103,7 +104,12 @@ $main:rgb(218, 218, 218);
 
             .cards_works{
                 width:400px;
-                height:200px; 
+                height:260px; 
+
+                .lista_works{
+                    font-size: 12px;
+                }
+                    
             }
         }
     }
@@ -123,8 +129,8 @@ $main:rgb(218, 218, 218);
 
 
             .cards_works{
-                width:250px;
-                height:350px; 
+                width:330px;
+                height:218px; 
             }
         }
     }

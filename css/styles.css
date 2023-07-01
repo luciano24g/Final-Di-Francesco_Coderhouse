@@ -242,10 +242,6 @@
   --bs-navbar-active-color:rgb(76, 188, 76);
 }
 
-.navbar-toggler {
-  background-color: white;
-}
-
 #footer {
   background-color: #0c5731;
   height: 7rem;
@@ -425,6 +421,7 @@
   display: flex;
   width: 90%;
   height: 100%;
+  font-size: 16px;
   justify-content: space-around;
   align-items: center;
 }
@@ -435,7 +432,6 @@
 .sect_works .sect_works_art .works_link {
   text-decoration: none;
   color: white;
-  font-size: 16px;
   transition: transform 0.9s;
 }
 .sect_works .sect_works_art .works_link :hover {
@@ -454,7 +450,10 @@
   }
   .sect_works .sect_works_art .cards_works {
     width: 400px;
-    height: 200px;
+    height: 260px;
+  }
+  .sect_works .sect_works_art .cards_works .lista_works {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 470px) {
@@ -462,8 +461,8 @@
     height: 230vh;
   }
   .sect_works .sect_works_art .cards_works {
-    width: 250px;
-    height: 350px;
+    width: 330px;
+    height: 218px;
   }
 }
 #main_faqs {
