@@ -619,6 +619,9 @@
 }
 
 @media screen and (max-width: 930px) {
+  #main_contact {
+    height: 95vh;
+  }
   .contact-box {
     grid-template-columns: 1, 1fr;
   }
