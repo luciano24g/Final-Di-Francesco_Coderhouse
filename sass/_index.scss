@@ -1,11 +1,11 @@
 $slime: #036e39;
 $greenfoot : #0c5731;
-
+$main:rgb(218, 218, 218);
 
 #main_index {
     height: 200vh;
     width: 100vw;
-	background: rgb(38, 38, 38);
+	background: $main;
 	display: flex;
     flex-direction: column;
 	align-items: center;
@@ -21,7 +21,7 @@ $greenfoot : #0c5731;
 	height: 90vh;
 	align-items: center;
 	justify-content: space-around;
-	color: #ffffff;
+	color: #050505;
                 .present_text {
                     font-size: 65px;
                 }
@@ -72,31 +72,48 @@ $greenfoot : #0c5731;
                                 display: flex;
                                 justify-content: space-between;
                                     .buttonClass{
-                                        font-weight: 0;
-                                        font-size: 14px;
-                                        color: #000000;
-                                        background-color: #8cfaa9;
-                                        padding: 10px 30px;
-                                        border: solid #000000 2px;
-                                        box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-                                        border-radius: 50px;
-                                        transition : 1000ms;
-                                        transform: translateY(0);
-                                        display: flex;
-                                        flex-direction: row;
-                                        align-items: center;
+                                        min-width: 130px;
+                                        height: 40px;
+                                        color: #fff;
+                                        padding: 5px 10px;
+                                        font-weight: bold;
                                         cursor: pointer;
+                                        transition: all 0.3s ease;
+                                        position: relative;
+                                        display: inline-block;
+                                        outline: none;
+                                        border-radius: 5px;
+                                        z-index: 0;
+                                        background: #fff;
+                                        overflow: hidden;
+                                        border: 2px solid #57cc99;
+                                        color: #57cc99;
                                                     &:hover {
-                                                        transition : 1000ms;
-                                                        padding: 10px 50px;
-                                                        transform : translateY(-0px);
-                                                        background-color: #000000;
-                                                        color: #ffffff;
-                                                        border: solid 2px #0066cc;
-                                                    }
+                                                        color: #fff;
+                                                      }
+
+                                                    &:hover:after {
+                                                        height: 100%;
+                                                      }
+
+                                                    &:after {
+                                                        content: "";
+                                                        position: absolute;
+                                                        z-index: -1;
+                                                        transition: all 0.3s ease;
+                                                        left: 0;
+                                                        top: 0;
+                                                        height: 0;
+                                                        width: 100%;
+                                                        background: #57cc99;
+                                                      }  
+                                                    &:active {
+                                                        top: 2px;
+                                                      }  
 
                                                     a {
                                                         text-decoration: none;
+                                                        color: #036e39;
                                                     }
                                         
                                         }
@@ -109,10 +126,6 @@ $greenfoot : #0c5731;
                 }
 
              
-                
-                    
-
-
 
 @keyframes wave {
     0%, 100% {

@@ -1,28 +1,42 @@
 $slime: #109954;
 $greenfoot : #0c5731;
-
+$main:rgb(218, 218, 218);
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 
 #header{
+    width: 100vw;
 	grid-area: header;
+    position: fixed;
+    z-index: 100;
                 
 }
+.logo{
+    font-family: 'Courgette', cursive;
+    text-decoration: none;
+}
+
+
 .listCent {
     display: flex;
     justify-content: end;
 }
 .bg_navbar{
-    background: rgb(32, 32, 32);
+    background: $main ;
+    
     
 }
 .bg_navbar a{
-    color: #ffffff;
-    font-size: 18px;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
 }
 
+
+
 .navbar{
-    --bs-navbar-hover-color: green;
-    --bs-navbar-active-color:green;
+    --bs-navbar-hover-color: rgb(69, 194, 69);
+    --bs-navbar-active-color:rgb(76, 188, 76);
 }
 .navbar-toggler{
     background-color:white;
