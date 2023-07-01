@@ -1,15 +1,16 @@
-
+$main:rgb(218, 218, 218);
 $slime: #036e39;
 
 #main_contact {
-    height: 120vh;
+    height: 88vh;
     width: 100vw;
-	background: rgb(38, 38, 38);
+	background: $main;
 	display: flex;
     flex-direction: column;
 	align-items: center;
     justify-content: center;
     grid-area: main;
+    
 }
 
 
@@ -45,10 +46,11 @@ $slime: #036e39;
                             justify-content: center;
                             align-items: center;
                             text-align: center;
-                            background-color: #fff;
-                            box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
-                            -webkit-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);
-                            -moz-box-shadow: -9px -6px 5px 0px rgba(9,166,54,0.46);;
+                            background-color: rgba(136, 135, 135, 0.841);
+                            box-shadow: 109px -1px 136px 35px rgba(3,110,57,0.51);
+                            -webkit-box-shadow: 109px -1px 136px 35px rgba(3,110,57,0.51);
+                            -moz-box-shadow: 109px -1px 136px 35px rgba(3,110,57,0.51);
+
                         }
                        
                         }

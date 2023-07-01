@@ -401,12 +401,13 @@
   display: flex;
   flex-direction: column;
   border: 2px solid green;
-  border-radius: 3px;
+  border-radius: 12px;
   transition: transform 0.8s ease-in-out;
   cursor: pointer;
   box-shadow: 109px -1px 136px 35px rgba(3, 110, 57, 0.51);
   -webkit-box-shadow: 109px -1px 136px 35px rgba(3, 110, 57, 0.51);
   -moz-box-shadow: 109px -1px 136px 35px rgba(3, 110, 57, 0.51);
+  overflow: hidden;
 }
 .sect_works .sect_works_art .cards_works:hover {
   transform: scale(1.2);
@@ -516,9 +517,9 @@
   }
 }
 #main_contact {
-  height: 120vh;
+  height: 88vh;
   width: 100vw;
-  background: rgb(38, 38, 38);
+  background: rgb(218, 218, 218);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -557,10 +558,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #fff;
-  box-shadow: -9px -6px 5px 0px rgba(9, 166, 54, 0.46);
-  -webkit-box-shadow: -9px -6px 5px 0px rgba(9, 166, 54, 0.46);
-  -moz-box-shadow: -9px -6px 5px 0px rgba(9, 166, 54, 0.46);
+  background-color: rgba(136, 135, 135, 0.841);
+  box-shadow: 109px -1px 136px 35px rgba(3, 110, 57, 0.51);
+  -webkit-box-shadow: 109px -1px 136px 35px rgba(3, 110, 57, 0.51);
+  -moz-box-shadow: 109px -1px 136px 35px rgba(3, 110, 57, 0.51);
 }
 .sect_contact .right {
   padding: 25px 40px;
